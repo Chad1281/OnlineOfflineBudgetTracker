@@ -1,6 +1,10 @@
 body {
   font-size: 120%;
   font-family: Arial;
+  background-image: url("./images/budget.png");
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+  background-color: rgb(221, 217, 171);
 }
 
 button, input {
@@ -13,7 +17,7 @@ table {
 }
 
 td, th {
-  border: 1px solid #dddddd;
+  border: 1px solid rgb(68, 58, 1);
   text-align: left;
   padding: 8px;
 }
@@ -27,9 +31,13 @@ tr:nth-child(even) {
 }
 
 .wrapper {
-  margin: 0 auto;
+  margin: 2.5% auto;
   max-width: 825px;
+  max-height: 100vh;
   text-align: center;
+  background-color: rgba(253, 253, 253, 0.6);
+  border-radius: 2rem;
+  padding: 2rem;
 }
 
 .total {

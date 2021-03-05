@@ -71,7 +71,7 @@ function populateChart() {
         datasets: [{
             label: "Total Over Time",
             fill: true,
-            backgroundColor: "#6666ff",
+            backgroundColor: "rgba(37, 68, 247,.75)",
             data
         }]
     }

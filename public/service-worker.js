@@ -12,7 +12,7 @@ const FILES_TO_CACHE = [
   const CACHE_NAME = "static-cache-v2";
   const DATA_CACHE_NAME = "data-cache-v2";  
   
-  // install
+  // installs files to cache
   self.addEventListener("install", function(event) {
   
     console.log("install");
@@ -37,6 +37,7 @@ const FILES_TO_CACHE = [
     const removeOldCache = async () => {
       const cacheKeyArray = await caches.keys();
     
+      // looks for new cache versions and deletes old cache data so new version can be installed
       const cacheResultPromiseArray = cacheKeyArray.map(key => {
         if (key !== CACHE_NAME && key !== DATA_CACHE_NAME) {
           console.log("Removing old cache data", key);
@@ -86,6 +87,7 @@ const FILES_TO_CACHE = [
     if (event.request.url.includes("/api/")) {
       event.respondWith(handleAPIDataRequest(event));
     } else {
+    // handles non api requests with or without an internet connect so the app still functions
       event.respondWith(handleResourceRequest(event));
     }
   

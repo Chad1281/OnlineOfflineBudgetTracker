@@ -5,7 +5,7 @@
 ## Introduction
 The Online Offline Budget Tracker allows you to make track your budget even when you are offline. When you get back online the budget changes will be made.
 
-##Technologies
+## Technologies
 This app uses the following technologies:
 * JavaScript
 * jQuery

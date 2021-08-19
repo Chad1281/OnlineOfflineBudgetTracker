@@ -1,6 +1,6 @@
 # Online Offline Budget Tracker
 
-![Image of the starting page]()
+![Image of the starting page](https://github.com/Chad1281/online-offline_budget_tracker/blob/main/public/images/budgetPage.png)
 
 ## Introduction
 The Online Offline Budget Tracker allows you to make track your budget even when you are offline. When you get back online the budget changes will be made.
